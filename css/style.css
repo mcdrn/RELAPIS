@@ -156,3 +156,92 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+/* ========== Services (features) ========== */
+.features {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 0;
+}
+.features li {
+  position: relative;
+  padding-left: 28px;
+  margin: 10px 0;
+}
+.features li::before {
+  content: "◆";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #1da1f2;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ========== Contact form ========== */
+.contact-form {
+  max-width: 780px;
+  margin: 10px auto 0;
+}
+.contact-form .form-row {
+  display: block;
+  margin-bottom: 16px;
+}
+.contact-form label {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 6px;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border-color: #1da1f2;
+  box-shadow: 0 0 0 3px rgba(29,161,242,0.15);
+}
+.contact-form .agree label {
+  font-weight: 500;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  margin: 6px 0 0;
+}
+.contact-form .btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #1da1f2;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity .2s ease, transform .02s ease-in;
+}
+.contact-form .btn:hover { opacity: .9; }
+.contact-form .btn:active { transform: translateY(1px); }
+.contact-form .form-note {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 8px;
+  text-align: left;
+}
+
+/* スマホ調整 */
+@media (max-width: 640px) {
+  .contact-form { padding: 0; }
+}
